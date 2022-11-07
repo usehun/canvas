@@ -71,3 +71,24 @@ ctx.moveTo(200, 400);
 ctx.lineTo(450, 400);
 ctx.stroke();
 ctx.beginPath();
+
+// 사람
+//사람 팔
+ctx.strokeRect(700, 300, 20, 60);
+ctx.strokeRect(780, 300, 20, 60);
+
+// 사람 상체
+ctx.rect(720, 300, 60, 50);
+ctx.fillStyle = "grey";
+ctx.fill();
+ctx.beginPath();
+
+// 사람 머리
+ctx.arc(750, 270, 30, 0, 2 * Math.PI);
+ctx.fillStyle = "black";
+ctx.fill();
+ctx.beginPath();
+
+// 사람 다리
+ctx.strokeRect(720, 350, 30, 70);
+ctx.strokeRect(750, 350, 30, 70);
